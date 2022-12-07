@@ -1,5 +1,7 @@
 <div class="wrapper">
-  <p class="date"></p>
+  <div class="date_box">
+    <p class="date">{{ date | date : "MMM d, y" }}</p>
+  </div>
   <div class="box1">
     <h1>Complete Angular Tutorial?</h1>
     <p>
@@ -10,29 +12,46 @@
     </p>
     <div class="form_wrapper">
       <form class="form">
-        <p>SignUp for free content</p>
-        <input type="text" class="input_name" placeholder="First name" />
-        <input type="text" class="input_name" placeholder="Last name" />
+        <div class="form_title">
+          <p>SignUp for free content</p>
+        </div>
+        <div class="names">
+          <input type="text" class="first" placeholder="First name" />
+          <input type="text" class="last" placeholder="Last name" />
+        </div>
         <input type="text" class="email" placeholder="Email Address" />
         <input type="password" class="password" placeholder="Create Password" />
-        <button mat-flat-button class="register">Register</button>
+        <div class="btn_wrapper">
+          <button mat-flat-button class="register">Register</button>
+        </div>
       </form>
     </div>
   </div>
+
   <div class="box2">
-    <p>
-      The Angular is a development platform for building a Single Page
-      Application for mobile and desktop. It uses Typescript & HTML to build
-      Apps. The Angular itself is written using the Typescript.
-    </p>
+    <div class="p_wrappers">
+      <p>
+        The Angular is a development platform for building a Single Page
+        Application for mobile and desktop. It uses Typescript & HTML to build
+        Apps. The Angular itself is written using the Typescript.
+      </p>
+    </div>
+    <div class="box2_btn">
+      <button mat-flat-button class="join">JoinToday</button>
+    </div>
   </div>
+
   <div class="box3">
-    <p>
-      The Angular is a development platform for building a Single Page
-      Application for mobile and desktop. It uses Typescript & HTML to build
-      Apps. The Angular itself is written using the Typescript.
-    </p>
-    <button mat-flat-button class="join">JoinToday</button>
-    <button mat-stroked-button class="connect">Connect us</button>
+    <div class="p_wrappers">
+      <p>
+        The Angular is a development platform for building a Single Page
+        Application for mobile and desktop. It uses Typescript & HTML to build
+        Apps. The Angular itself is written using the Typescript.
+      </p>
+    </div>
+    <div class="box3_btn">
+      <button mat-flat-button class="join">JoinToday</button>
+      <button mat-stroked-button class="connect">Connect us</button>
+    </div>
   </div>
 </div>
